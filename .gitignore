@@ -1,3 +1,4 @@
 Docker/Composes/mongodb.yml
 app/.env
 app/node_modules
+app/src/App.js

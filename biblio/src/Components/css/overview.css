@@ -1,0 +1,33 @@
+.overview{
+    width:80%;
+    height:70vh;
+    background-image: linear-gradient(rgba(255,255,255,.6), rgba(255,255,255,.3));
+    position: relative;
+}
+.overview *{
+    animation: 1s appear linear;
+}
+.overview .title{
+    top:0;
+    position: absolute;
+    animation: .5s goUp linear;
+}
+.overview .prets{
+    width:50%;
+    height:94%;
+    top:6%;
+    left:0%;
+    position: absolute;
+    background: rgba(0,0,0,.1)
+}
+
+@keyframes goUp{
+    0% {top:50%;}
+    50% {top: 30%;}
+    100%{top:0%;}
+}
+@keyframes appear{
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100%{opacity: 1;}
+}

@@ -2,27 +2,26 @@
     width:80%;
     height:70vh;
     background-image: linear-gradient(rgba(255,255,255,.6), rgba(255,255,255,.3));
-    position: relative;
     justify-content: center;
-    align-items: center;
-}
-.overview *{
-    animation: 1s appear linear;
+    align-items: space-around;
+    flex-direction: column;
+    /* overflow: hidden; */
 }
 .overview .title{
-    animation: .5s goUp linear;
+    width: 100%;
+    justify-content:center;
 }
 .overview .prets{
-    background: rgba(0,0,0,.1)
+    background: rgba(0,0,0,.1);
+    height: 50%;
 }
-
-@keyframes goUp{
-    0% {top:50%;}
-    50% {top: 30%;}
-    100%{top:0%;}
+.overview .prets .lastpret{
+    background: rgba(0,0,0,.1);
+    height: 100%;
+    width: 50%;
 }
-@keyframes appear{
-    0% {opacity: 0;}
-    50% {opacity: 0;}
-    100%{opacity: 1;}
+.overview .prets .speedpret{
+    background: rgba(0,0,0,.2);
+    height: 100%;
+    width: 50%;
 }

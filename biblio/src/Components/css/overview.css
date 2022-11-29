@@ -20,8 +20,12 @@
     height: 100%;
     width: 50%;
 }
-.overview .prets .speedpret{
+.overview .prets .speedsearch{
     background: rgba(0,0,0,.2);
     height: 100%;
     width: 50%;
+}
+input#search{
+   border-top-right-radius: 0; 
+   border-bottom-right-radius: 0; 
 }

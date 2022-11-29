@@ -9,18 +9,9 @@ function LastPret() {
     </div>
   )
 }
-function SpeedPret() {
-  return (
-    <div className="speedpret col">
-      <form action="#" className="mb-3">
-        <input type="text" className="form-control" />
-      </form>
-    </div>
-  )
-}
 function Analytics() {
   return (
-    <div className="analytics row container">
+    <div className="analytics col container">
       <div className="col">
         <h2>183</h2>
       </div>
@@ -34,15 +25,26 @@ function Analytics() {
   )
 }
 
+function SpeedSearch() {
+  return (
+    <div className="speedsearch col">
+      <div className="input-group has-validation">
+        <input type="text" className="form-control" id="search" placeholder="Type to search..." aria-describedby="search" />
+        <button className="input-group-text" id="search"><i className="bi bi-search"></i></button>
+      </div>
+    </div>
+  )
+}
+
 export function Overview() {
   return (
-    <div class="container overview mt-5 border-dark shadow rounded">
-        {/* <h1 class="title d-flex text-4xl p-2">Accueil</h1> */}
-        <div class="prets row">
+    <div className="container overview mt-5 border-dark shadow rounded">
+        {/* <h1 className="title d-flex text-4xl p-2">Accueil</h1> */}
+        <div className="prets row">
           <LastPret />
-          <SpeedPret />
+          <Analytics />
         </div>
-        <Analytics />
+        <SpeedSearch />
     </div>
   )
 }

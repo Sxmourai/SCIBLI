@@ -3,21 +3,16 @@
     height:70vh;
     background-image: linear-gradient(rgba(255,255,255,.6), rgba(255,255,255,.3));
     position: relative;
+    justify-content: center;
+    align-items: center;
 }
 .overview *{
     animation: 1s appear linear;
 }
 .overview .title{
-    top:0;
-    position: absolute;
     animation: .5s goUp linear;
 }
 .overview .prets{
-    width:50%;
-    height:94%;
-    top:6%;
-    left:0%;
-    position: absolute;
     background: rgba(0,0,0,.1)
 }
 

@@ -2,12 +2,14 @@ import { auth } from './firebase_config';
 import { signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
 import { useAuthState } from 'react-firebase-hooks/auth';
 
-import { NavBar } from './Components/navbar'
-import { Overview } from './Components/overview'
+import { NavBar } from './Components/navbar';
+import { Overview } from './Components/overview';
+import './Components/css/general.css';
+
 
 function App() {
   const [user] = useAuthState(auth);
-  return (<div>{user ? <Dashboard /> : <SignIn />}</div>);
+  return (<div className="App">{user ? <Dashboard /> : <SignIn />}</div>);
 }
 
 function SignIn() {
@@ -28,7 +30,7 @@ function SignOut() {
 }
 function Dashboard() {
   return (
-    <div className="App">
+    <div className="Dashboard">
       <NavBar />
       <Overview />
     </div>)

@@ -1,3 +1,4 @@
+import './css/general.css';
 import './css/navbar.css';
 export function NavBar() {
     return (
